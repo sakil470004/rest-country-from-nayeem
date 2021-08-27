@@ -1,7 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,500;0,600;1,400&display=swap'); */
-
 body {
-    font-family: 'Besley', serif;
+    font-family:  serif,Arial, Helvetica, sans-serif;
     background-color: rgba(0, 255, 255, 0.26);
     margin: 0;
     padding: 0;
@@ -32,7 +30,7 @@ body {
 }
 
 .container div h1 {
-    font-family: fantasy;
+    font-family: fantasy,Arial, Helvetica, sans-serif;
     font-size: 3em;
     text-align: center;
     width: 400px;
@@ -53,7 +51,7 @@ img:hover {
 }
 
 p {
-    font-family: fantasy;
+    font-family: fantasy,Arial, Helvetica, sans-serif;
     font-size: 22px;
     padding-left: 13px;
 }
