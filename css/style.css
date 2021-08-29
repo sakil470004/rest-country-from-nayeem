@@ -1,8 +1,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(0, 255, 255, 0.26);
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 .main-div {
@@ -33,7 +35,8 @@ div img {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3em;
     text-align: center;
-    width: 400px;
+    margin: 13px;
+    width: 474px;
     margin-top: 10px;
     transition: all 0.5s;
     cursor: pointer;
@@ -64,23 +67,6 @@ p {
 .img-inline-hide{
     display: none;
 } */
-
-/* Media Query: Large Smartphone (Vertical) */
-
-@media screen and (max-width: 600px) {
-    body {
-        overflow-y: auto;
-    }
-    .img-inline {
-        display: block;
-    }
-    .mobile-extra {
-        display: none;
-    }
-    .img-inline-hide {
-        display: none;
-    }
-}
 
 /* floating model css */
 
@@ -118,6 +104,7 @@ p {
     width: fit-content;
     /* Could be more or less, depending on screen size */
     height: wrap;
+    border-radius: 5px;
 }
 
 /* The Close Button */
@@ -140,7 +127,7 @@ p {
 #myInput {
     /* Add a search icon to input */
     /* background-image: url('../searchBackground.jpg'); */
-    background-color: rgba(98, 0, 255,0.3);
+    background-color: rgba(98, 0, 255, 0.3);
     background-position: 10px 12px;
     /* Position the search icon */
     background-repeat: no-repeat;
@@ -149,10 +136,45 @@ p {
     /* Full-width */
     font-size: 20px;
     /* Increase font-size */
-    padding: 12px 20px 12px 40px;
+    padding: 20px;
     /* Add some padding */
     border: 1px solid #ddd;
     /* Add a grey border */
     margin-bottom: 12px;
     /* Add some space below the input */
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+
+@media screen and (max-width: 600px) {
+    body {
+        overflow-y: auto;
+    }
+    .floting_window_content {
+        margin: auto;
+        /* 15% from the top and centered */
+        padding: 10px;
+        border: 1px solid #888;
+        width: 80%;
+        /* Could be more or less, depending on screen size */
+        height: 100%;
+    }
+    div img {
+        width: 320px;
+        height: 220px;
+        margin: 5px;
+    }
+    .container div h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        text-align: center;
+        width: 280px;
+        margin-top: 10px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    .main-div {
+        width: fit-content;
+        height: 100%;
+    }
 }

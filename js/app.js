@@ -52,7 +52,7 @@ const showDetails = (data) => {
           <span class="close" onclick="closeFlotingWindow() ">&times;</span>
           <div class="">
             <img src="${data.flag}" class="extra-image">
-            <h1 class="card-title">${data.name}</h1>
+            <h1>${data.name}</h1>
 
           </div>
           <div>
@@ -86,12 +86,13 @@ window.onclick = function (event) {
 }
 //search funtion
 function myFunction() {
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  var countryTitle = document.querySelectorAll('.card-title');
-  var countryDiv = document.querySelectorAll('.countrys');
-
+  
+ var input = document.getElementById("myInput");
+  var filter = input.value.toUpperCase();
+ 
+  const countryTitle = document.querySelectorAll('.card-title');
+  const countryDiv = document.querySelectorAll('.countrys');
+  
   //  var h1 =document.getElementsByTagName("h1");
   // console.log(countryTitle[0].childNodes[0].textContent)
 
@@ -99,7 +100,7 @@ function myFunction() {
 
   for (var i = 0; i < fullArray.length; i++) {
     // console.log(countryTitle[i].childNodes[0].textContent)
-    txtValue = countryTitle[i].childNodes[0].textContent;
+   var txtValue = countryTitle[i].childNodes[0].textContent;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       countryDiv[i].style.display = "";
     } else {
